@@ -1,0 +1,89 @@
+.banner {
+  position: relative;
+}
+
+.banner > div {
+  position: absolute;
+  color: white;
+  bottom: 20%;
+  left: 38.5%;
+  width: 20rem;
+  text-align: center;
+}
+
+.invisible {
+  display: none;
+}
+
+.container-fluid > h2 {
+  padding-top: 3%;
+}
+
+.admin-form {
+  margin: 20px;
+}
+
+.login-container {
+  /* border: 0.5px solid black; */
+  width: 40%;
+  margin: 10% auto;
+}
+
+.login-container > h2 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.checkout-container {
+  width: 70%;
+  margin: 2% auto;
+  position: relative;
+}
+
+.checkout-container > h2 {
+  text-align: center;
+}
+
+.product-view-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  position: relative;
+}
+
+.product-view-container img {
+  margin: 3%;
+}
+
+.product-view-container > details {
+  margin-top: 5%;
+}
+
+.details > * {
+  position: relative;
+  top: 5.5%;
+  margin-right: 10%;
+}
+
+.details > .discount-div > .price {
+  text-decoration: line-through;
+  margin: 5%;
+}
+
+.details > .discount-div > .sale {
+  color: red;
+  font-weight: bold;
+}
+
+.review-container {
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+}
+
+.card > .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 4%;
+}
