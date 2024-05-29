@@ -8,7 +8,7 @@ import passportLocalMongoose from "passport-local-mongoose";
 
 const upload = multer({ dest: "public/uploads/" });
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -128,6 +128,7 @@ app.post("/addproduct", upload.single("image"), async (req, res) => {
     type: req.body.type.toLowerCase(),
   };
   try {
+    n;
     await Product.insertMany([product]);
   } catch (error) {
     console.log(error);
