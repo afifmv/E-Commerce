@@ -8,7 +8,7 @@ import passportLocalMongoose from "passport-local-mongoose";
 
 const upload = multer({ dest: "public/uploads/" });
 const app = express();
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
