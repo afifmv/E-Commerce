@@ -5,6 +5,11 @@ import multer from "multer";
 import session from "express-session";
 import passport from "passport";
 import passportLocalMongoose from "passport-local-mongoose";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if (process.env.NODE_ENV == "production") {
+  disableReactDevTools();
+}
 
 const upload = multer({ dest: "public/uploads/" });
 const app = express();
